@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fdaac89f29.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
+</head>
+
+<body>
+    <!-- ==============header==================== -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="img/logo.png" class="logo" alt="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+
+            <div class="header-text">
+                <div class="text-1">Hi, my name is </div>
+                <div class="text-2">Vladislav Grigorev</div>
+                <div class="text-3"> And I'm a <span class="typing"></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================about================ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a first-year student at Innopolis University and I want
+                        to start working with real projects in
+                        industrial development. I am ready to learn new
+                        languages, technologies and frameworks.
+                        I am responsible for deadlines, I do
+                        my work in advance, I am good at it and I like to work in
+                        a team. Familiar with GTD methodology, technique
+                        Eisenhower Matrix and I'm running tasks in Trello.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>Java development</span> <br>Swing, Spring frameworks, Databases </li>
+                            <li> <span> DevOps Engineer</span> <br> Docker </li>
+                            <li> <span> Web Designer</span> <br> Figma, HTML, CSS, JS </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span>2022 - 2023</span> <br>Tinkoff Academy course </li>
+                            <li> <span>2023</span> <br>Yandex Academy course </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>2022-2026</span> <br>Bachelor degree at Innopolis University </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================services================ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java development</h2>
+                    <p>Java developer capable of creating scalable and robust applications </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web development</h2>
+                    <p>Beginner developer able to create beautiful and responsive websites. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-bots" style="font-size: 60px;"></i>
+                    <h2>Bot development</h2>
+                    <p>Bot developer, able to create automated solutions to improve business processes. </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================portfolio================== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Spring Boot Blog</h3>
+                        <p>Simple blog implementation with the ability to add, edit and delete articles.
+                            It uses MVC model, Workbench MySQL, Thymeleaf, Spring Boot, HTML/CSS</p>
+                        <a href="https://github.com/vladislav77777/blog_Spring_Boot"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic Tac Toe game</h3>
+                        <p>Everyone is familiar with Tic-tac-toe. Create a version of this game using the Swing graphics
+                            library. Teach a computer to play this game and compete against both your friend and AI.</p>
+                        <a href="https://github.com/vladislav77777/Desktop_TicTacToe"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>FIRST-Tech-Challenge</h3>
+                        <p>The software part of the robot assembled for the FTC competitions.
+                            See it at github.</p>
+                        <a href="https://github.com/vladislav77777/FIRST-Tech-Challenge"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/vladislav77777?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- =================contact me=================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> vladoss7700@mail.ru </p>
+                    <p><i class="fa-solid fa-square-phone"></i>+7 (981) 967-06-84</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/VLADISLAVVV777 "><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://github.com/vladislav77777"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vladoss7700/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://vk.com/vladislavv77"><i class="fa-brands fa-vk"></i></a>
+                    </div>
+                    <a href="img/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right" onsubmit="sendEmail(event)">
+                    <form>
+                        <input type="email" name="Name" id="sender" placeholder="Your email" required>
+                        <input type="email" name="Name" id="recipient" placeholder="To" required>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Email me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============copyright================= -->
+    <div class="copyright">
+        <p>Copyright © Vladi. Made with <i class="fas fa-heart"></i> from
+            Innopolis
+        </p>
+    </div>
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
