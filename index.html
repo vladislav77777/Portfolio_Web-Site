@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fdaac89f29.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 </head>
 
 <body>
+    <div id="cursor"></div>
+    <div id="aura"></div>
     <!-- ==============header==================== -->
     <div id="header">
         <div class="container">
@@ -45,25 +48,33 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I am a first-year student at Innopolis University and I want
+                    <p>
+                        <!-- I am a first-year student at Innopolis University and I want
                         to start working with real projects in
                         industrial development. I am ready to learn new
                         languages, technologies and frameworks.
                         I am responsible for deadlines, I do
                         my work in advance, I am good at it and I like to work in
                         a team. Familiar with GTD methodology, technique
-                        Eisenhower Matrix and I'm running tasks in Trello.</p>
+                        Eisenhower Matrix and I'm running tasks in Trello. -->
+                        As a first-year student at Innopolis University, I am passionate about industrial development
+                        and eager to work on impactful projects. I embrace learning new languages, technologies, and
+                        frameworks with enthusiasm, and my proactive approach to tasks ensures timely completion in a
+                        team setting. Proficient in GTD methodology, the Eisenhower Matrix, and Trello, I excel in
+                        efficient project management. Committed to innovation, I look forward to making a meaningful
+                        contribution to the world of technology and development.
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div> 
+                    </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li> <span>Java development</span> <br>Swing, Spring frameworks, Databases </li>
+                            <li> <span>Java development</span> <br>Spring, Swing frameworks, Hibernate, SQL </li>
                             <li> <span> DevOps Engineer</span> <br> Docker </li>
-                            <li> <span> Web Designer</span> <br> Figma, HTML, CSS, JS </li>
+                            <li> <span> Web Designer</span> <br> Figma, HTML/CSS, JS, React, SvelteKit </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
@@ -74,7 +85,7 @@
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li> <span>2022 - 2026</span> <br>Bachelor degree at Innopolis University </li>
+                            <li> <span>2022-2026</span> <br>Bachelor degree at Innopolis University </li>
                         </ul>
                     </div>
                 </div>
@@ -163,11 +174,12 @@
                         <a href="https://vk.com/vladislavv77"><i class="fa-brands fa-vk"></i></a>
                     </div>
                     <a href="img/my-cv.pdf" class="btn btn2">Download CV</a>
-                </div>
+                </div> 
                 <div class="contact-right" onsubmit="sendEmail(event)">
                     <form>
                         <input type="email" name="Name" id="sender" placeholder="Your email" required>
-                        <input type="email" name="Name" id="recipient" placeholder="To" required>
+                        <input type="email" name="Name" id="recipient" placeholder="To" value="vladoss7700@mail.ru"
+                            required>
                         <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Email me</button>
