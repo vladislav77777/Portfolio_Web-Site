@@ -61,7 +61,8 @@ body {
     background-image: url(img/background.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: calc(100% + 385px) center;
+    background-attachment: fixed;
+    background-position: calc(100% + 165px) center;
     margin: 0 auto;
 }
 
