@@ -62,7 +62,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: calc(100% + 165px) center;
+    background-position: calc(100% + 165px) calc(50% + 10px);
     margin: 0 auto;
 }
 
@@ -107,6 +107,20 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+.cv-btn {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-btn:hover {
+    background-color: #ff299e;
+    box-shadow: 0px 8px 15px rgba(243, 156, 18, 0.3);
 }
 
 .header-text {
@@ -432,7 +446,7 @@ nav .fas {
     #header {
         background-position: calc(100% + 100px) center;
 
-        background-image: url(img/phone.png);
+        background-image: url(img/background.png);
         height: 80%;
     }
 
@@ -452,6 +466,7 @@ nav .fas {
 
     nav ul {
         background: #ff004f;
+        color: #fff;
         position: fixed;
         top: 0;
         right: -200px;
