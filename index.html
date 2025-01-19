@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fdaac89f29.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -44,23 +45,24 @@
     <div id="about">
         <div class="container">
             <div class="row">
+                <!-- Колонка с изображением -->
                 <div class="about-col-1">
                     <img src="img/user.png" alt="user">
                 </div>
+                <!-- Колонка с текстовым контентом -->
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I am a dedicated Java Developer with experience in backend development and DevOps. I’ve
-                        contributed to various projects, participated in hackathons and Olympiads, and completed an
-                        engineering internship. Passionate about building scalable solutions and optimizing processes, I
-                        strive to create innovative products that solve real-world challenges and bring value to
-                        people’s lives.
-                        <!-- As a first-year student at Innopolis University, I am passionate about industrial development
-                        and eager to work on impactful projects. I embrace learning new languages, technologies, and
-                        frameworks with enthusiasm, and my proactive approach to tasks ensures timely completion in a
-                        team setting. Proficient in GTD methodology, the Eisenhower Matrix, and Trello, I excel in
-                        efficient project management. Committed to innovation, I look forward to making a meaningful
-                        contribution to the world of technology and development. -->
+                    <p class="about-description">
+                        I am a committed <span class="highlight">Software Engineer</span> with experience in backend
+                        development and DevOps. I’ve successfully contributed to projects
+                        where I optimized a microservices-based application, <span class="highlight">reducing latency by
+                            50%</span> and significantly boosting manager satisfaction. I have also designed and
+                        implemented new features in Java applications, resulting in <span class="highlight">improved
+                            customer satisfaction</span>. Additionally, I developed proactive monitoring solutions,
+                        which <span class="highlight">minimized system downtime by 25%</span> and enhanced issue
+                        detection and resolution.<br> Passionate about building scalable and efficient systems, <span
+                            class="highlight">I focus on delivering innovative solutions that address real-world
+                            challenges</span> and provide measurable value.
                     </p>
 
                     <div class="tab-titles">
@@ -68,39 +70,94 @@
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
+                    <!-- Таб с навыками -->
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>
-                                <span>Java Development</span> <br>
-                                Spring, SQL, Liquibase, REST APIs, gRPC, JWT, Redis, Multithreading, Design Patterns,
-                                Microservices
+                        <ul class="skills-list">
+                            <li class="skills-item">
+                                <span class="highlight">Java Developer</span> <br>
+                                Spring, SQL, Liquibase, REST APIs, gRPC, Redis, Design Patterns, Microservices
                             </li>
-                            <li>
-                                <span>DevOps Engineer</span> <br>
-                                Docker, Kubernetes, CI/CD (Jenkins, GitHub Actions), Linux, Bash, Nginx, Prometheus,
-                                Grafana, ELK Stack, AWS
+                            <li class="skills-item">
+                                <span class="highlight">DevOps Engineer</span> <br>
+                                Docker, Kubernetes, Nginx, Prometheus, Grafana, ELK Stack, AWS
                             </li>
-                            <li>
-                                <span>Web Development</span> <br>
+                            <li class="skills-item">
+                                <span class="highlight">Web Developer</span> <br>
                                 Figma, HTML5, CSS3, JavaScript, TypeScript, React, SvelteKit
                             </li>
                         </ul>
                     </div>
+                    <!-- Таб с опытом -->
                     <div class="tab-contents" id="experience">
-                        <ul>
-                            <li> <span>2022 - 2023</span> <br>Tinkoff Academy course </li>
-                            <li> <span>2023</span> <br>Yandex Academy course </li>
+                        <ul class="experience-list">
+                            <li class="experience-item">
+                                <div class="company-logo">
+                                    <img src="img/maxim-logo.png" alt="Maxim Technology Logo" class="company-logo-img">
+                                </div>
+                                <div class="experience-details">
+                                    <span class="highlight date">Aug 2024 - Present</span>
+                                    <h3 class="company-name">Maxim Technology</h3>
+                                    <p class="job-description">
+                                        Developed and maintained Java applications, improved manager experience, and
+                                        boosted customer satisfaction by 50%. Played a key role in integrating <span
+                                            class="highlight">microservices</span> and designed application <span
+                                            class="highlight">monitoring solutions</span>. Worked with technologies like
+                                        <span class="highlight">Spring</span>, <span
+                                            class="highlight">Elasticsearch</span>, <span
+                                            class="highlight">Jenkins</span>, <span class="highlight">PostgreSQL</span>,
+                                        and <span class="highlight">GitLab</span>.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="experience-item">
+                                <div class="company-logo">
+                                    <img src="img/innopolis-logo.png" alt="Innopolis University Logo"
+                                        class="company-logo-img">
+                                </div>
+                                <div class="experience-details">
+                                    <span class="highlight date">Apr 2023 - Aug 2024</span>
+                                    <h3 class="company-name">Innopolis University</h3>
+                                    <p class="job-description">
+                                        Assisted in developing <span class="highlight">AI-powered applications</span>
+                                        and meeting room reservation systems. Leveraged <span class="highlight">Spring
+                                            Boot</span>, <span class="highlight">PostgreSQL</span>, <span
+                                            class="highlight">Docker</span>, and <span class="highlight">CI/CD
+                                            tools</span>, improving system scalability and reducing build times by 25%.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="experience-item">
+                                <div class="company-logo">
+                                    <img src="img/tinkoff-logo.png" alt="Tinkoff Academy Logo" class="company-logo-img">
+                                </div>
+                                <div class="experience-details">
+                                    <span class="highlight date">2022 - 2023</span>
+                                    <h3 class="company-name">Tinkoff Academy</h3>
+                                    <p class="job-description">Completed an advanced software engineering course,
+                                        focusing on Java development, microservices, and database management.</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
+                    <!-- Таб с образованием -->
                     <div class="tab-contents" id="education">
-                        <ul>
-                            <li> <span>2022 - 2026</span> <br>Bachelor degree at Innopolis University </li>
+                        <ul class="education-list">
+                            <li class="education-item">
+                                <div class="education-content">
+                                    <img src="img/innopolis-logo.png" alt="Bachelor Logo" class="education-logo">
+                                    <div class="education-details">
+                                        <span class="highlight">2022 - 2026</span> <br>
+                                        <p class="edu-description">Bachelor degree at Innopolis University</p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- ==================services================ -->
     <div id="services">
         <div class="container">
@@ -111,21 +168,21 @@
                     <h2>Backend Development</h2>
                     <p>Proficient in building scalable, secure, and efficient backend systems using Java, Spring, SQL,
                         and microservices architecture.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vladislav77777" target="_blank" class="btn-link">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-gears"></i>
                     <h2>DevOps Solutions</h2>
                     <p>Experienced in setting up CI/CD pipelines, containerization with Docker, and deploying
-                        applications using Kubernetes and cloud platforms.</p>
-                    <a href="#">Learn more</a>
+                        applications using K8s and cloud platforms.</p>
+                    <a href="https://github.com/vladislav77777" target="_blank" class="btn-link">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
                     <p>Capable of creating modern and responsive web applications using HTML, CSS, JavaScript, and
                         frameworks like React and SvelteKit.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vladislav77777" target="_blank" class="btn-link">Learn more</a>
                 </div>
             </div>
         </div>
@@ -149,16 +206,6 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="img/work-2.jpg" alt="">
-                    <div class="layer">
-                        <h3>Tic Tac Toe game</h3>
-                        <p>Everyone is familiar with Tic-tac-toe. Create a version of this game using the Swing graphics
-                            library. Teach a computer to play this game and compete against both your friend and AI.</p>
-                        <a href="https://github.com/vladislav77777/Desktop_TicTacToe"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
                     <img src="img/work-3.jpg" alt="">
                     <div class="layer">
                         <h3>CookAInno</h3>
@@ -166,6 +213,16 @@
                             personalized recommendations.</p>
                         <a
                             href="https://docs.google.com/presentation/d/1e_NvU9qRJraqvstBxZ55JZ4GOy6MMuxrxdSo-gP1Cd8/edit#slide=id.p"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic Tac Toe game</h3>
+                        <p>Everyone is familiar with Tic-tac-toe. Create a version of this game using the Swing graphics
+                            library. Teach a computer to play this game and compete against both your friend and AI.</p>
+                        <a href="https://github.com/vladislav77777/Desktop_TicTacToe"><i
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -180,7 +237,9 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> vladoss7700@mail.ru </p>
+                    <p><i class="fas fa-paper-plane"></i> <a href="mailto:vladoss7700@mail.ru"
+                            class="email-link">vladoss7700@mail.ru</a></p>
+                    </p>
                     <p><i class="fa-solid fa-square-phone"></i>+7 (981) 967-06-84</p>
                     <div class="social-icons">
                         <a href="https://t.me/VLADISLAVVV777 "><i class="fa-brands fa-telegram"></i></a>
@@ -194,7 +253,7 @@
                     <form>
                         <input type="email" name="Name" id="sender" placeholder="Your email" required>
                         <input type="email" name="Name" id="recipient" placeholder="To" value="vladoss7700@mail.ru"
-                            required>
+                            required hidden>
                         <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Email me</button>
@@ -205,9 +264,7 @@
     </div>
     <!-- ===============copyright================= -->
     <div class="copyright">
-        <p>Copyright © Vladi. Made with <i class="fas fa-heart"></i> from
-            Innopolis
-        </p>
+        <p>Copyright &copy; 2025 Vladi. Made with <i class="fas fa-heart"></i> from Innopolis</p>
     </div>
 
 
